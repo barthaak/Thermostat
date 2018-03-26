@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/backgroundNewTar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.tue.demothermostat.ThermostatActivity"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:id="@+id/newTargetNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set new \n Night Temperature:"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tempsettings"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/tempsettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/textViewnight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_alignParentStart="true"
+
+
+            />
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/seekArcContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        >
+
+        <nl.tue.demothermostat.SeekArc
+            android:id="@+id/seekBarnight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            seekarc:arcColor="#f99292"
+            seekarc:clockwise="true"
+            android:padding="30dp"
+            seekarc:max="250"
+            seekarc:progressColor="#db1a1a"
+            seekarc:rotation="180"
+            seekarc:startAngle="30"
+            seekarc:sweepAngle="300"
+            seekarc:thumb="@drawable/custom_seek_arc_control_selector"
+            seekarc:touchInside="true"
+            />
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/next12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next: ... from ..."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/seekArcContainer"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

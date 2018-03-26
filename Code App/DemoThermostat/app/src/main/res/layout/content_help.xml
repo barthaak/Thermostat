@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.tue.demothermostat.HelpActivity">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin = "10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This section will cover some most frequently asked questions. For any other questions, take a look at the instruction manual to acquaint yourself with more information. \nIf answers cannot be found in the instruction manual or in this section, please visit our website at www.example.com for more information."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="At the home page, why do I see 'Next: ... from ...' and not the next temperature and corresponding time?"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There probably is difficulty connecting to the server, check your internet connection. If you already had internet connection and after a couple of seconds it does not fix itself, try to click on the menu and click on home again, so it does a full refresh."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="At the week schedule page, why is everything disabled and does it say 'You need 5x 'day' and 6x 'night'. You have 10x 'day and 1x 'night'?"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There probably is a problem connecting to the server, try to connect with the internet, click the menu and 'Week Schedule' to fully refresh."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="At the home page, why switches the temperature and time in the line 'Next: ... from ...' for a brief moment of time?"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a bug in the current version of the app. We are working to fix the problem. For now, close the app and close it from the background processes. Then restart the app."
+                        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background4"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.tue.demothermostat.WeekActivity"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/text14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Time: "
+        android:textSize="15dp"
+         />
+    <TextView
+        android:id="@+id/clocktemp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="15dp"
+        android:layout_alignBaseline="@+id/text14"
+        android:layout_alignBottom="@+id/text14"
+        android:layout_alignStart="@+id/spinnerTemp4" />
+
+    <ImageButton
+        android:id="@+id/time_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/clocktemp4"
+        android:layout_alignRight="@+id/spinnerTemp4"
+        android:background="@drawable/border_edit"
+        />
+    <TextView
+        android:id="@+id/text24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Temperature: "
+        android:textSize="15dp"
+        android:layout_below="@+id/text14"
+        android:layout_alignStart="@+id/text14"
+        android:layout_marginTop="7dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTemp4"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_spinner_temp"
+        android:layout_marginStart="8dp"
+        android:layout_alignTop="@+id/text24"
+        android:layout_toEndOf="@+id/text24"
+        android:layout_alignBottom="@+id/text24"
+        />
+
+    <CheckBox
+        android:id="@+id/chk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/spinnerTemp4"
+        android:layout_alignTop="@+id/clocktemp4"
+        android:layout_alignBottom="@+id/spinnerTemp4"
+        android:layout_marginLeft="25dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background12"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.tue.demothermostat.ThermostatActivity"
+
+    >
+
+
+    <include
+        android:id="@+id/includeCurTar"
+        layout="@layout/content_cur_and_tar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <View android:id="@+id/views12"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#a9a9a9"
+        />
+
+    <include
+        android:id="@+id/includeSetTar"
+        layout="@layout/content_newtar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_marginBottom="-1dp"
+        />
+
+    <include
+        android:id="@+id/includeWCButtons"
+        layout="@layout/content_wc_buttons"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+
+
+    <View android:id="@+id/views123"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#a9a9a9"
+        />
+
+    <include
+        android:id="@+id/includeButtons"
+        layout="@layout/content_newtarbuttons"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        />
+
+</LinearLayout>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_current"
+            android:icon="@drawable/ic_home_black"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_change"
+            android:icon="@drawable/thermometer"
+            android:title="Set Target Temperature" />
+        <item
+            android:id="@+id/nav_day"
+            android:icon="@drawable/sun"
+            android:title="Day Temperature" />
+
+        <item
+            android:id="@+id/nav_night"
+            android:icon="@drawable/moon"
+            android:title="Night Temperature" />
+
+        <item
+            android:id="@+id/nav_week"
+            android:icon="@drawable/ic_date_range_black_24dp_2x"
+            android:title="Week Schedule" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help_circle_outline"
+            android:title="Help" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.tue.demothermostat.ThermostatActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="25"
+        android:layout_marginTop="5dp"
+
+        >
+
+    <include
+        layout="@layout/content_curtemp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+
+        />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/content_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <View android:id="@+id/views2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#a9a9a9"
+        android:layout_below="@+id/curTemp"
+        android:layout_marginTop="0dp"/>
+
+    <include
+        layout="@layout/content_targettemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <View android:id="@+id/views"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#a9a9a9"
+        android:layout_below="@+id/curTemp"
+        android:layout_marginTop="0dp"/>
+
+    <Button
+        android:id="@+id/setTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Set Target Temperature"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onSetTempClicked"
+        android:layout_marginTop="15dp"
+        />
+
+
+</LinearLayout>
+

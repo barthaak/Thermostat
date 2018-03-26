@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background0"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.tue.demothermostat.WeekActivity"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Time: "
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/clocktemp0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="15dp"
+        android:layout_alignBaseline="@+id/text0"
+        android:layout_alignBottom="@+id/text0"
+        android:layout_alignStart="@+id/spinnerTemp0" />
+
+
+
+    <TextView
+        android:id="@+id/text00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Temperature: "
+        android:textSize="15dp"
+        android:layout_below="@+id/text0"
+        android:layout_alignStart="@+id/text0"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:id="@+id/spinnerTemp0"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="night"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/text00"
+        android:layout_toEndOf="@+id/text00"
+        android:layout_alignBottom="@+id/text00"
+        />
+
+    <CheckBox
+        android:id="@+id/chk0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/spinnerTemp0"
+        android:layout_alignTop="@+id/clocktemp0"
+        android:layout_alignBottom="@+id/spinnerTemp0"
+        android:layout_marginLeft="25dp"
+        android:checked="true"
+        android:enabled="false"
+        />
+
+</RelativeLayout>
